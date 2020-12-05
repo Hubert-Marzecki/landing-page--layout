@@ -7,13 +7,13 @@ import Hero from './components/Hero'
 import ProfitSection from './components/ProfitSection'
 import FAQ from './components/FAQ'
 import Opinions from './components/Opinions';
-import SeoFriend from './components/SeoFriend';
+import SeoFriend from './components/SeoTiles';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-blue-100">
+    <div className="App">
         <Header />
         <Hero />
         <ProfitSection />

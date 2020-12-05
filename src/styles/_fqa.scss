@@ -1,0 +1,33 @@
+@import './varibles';
+
+.faq__section{
+   @include container-body
+  }
+
+.faq__header{
+    font-family: "SFNS Display";
+    font-size: 40px;
+    width: 70%;
+    
+    @media(max-width:  $mobile-breakpoing) {
+        width: 100%;
+    }
+}
+
+.faq__button{
+    @include button;
+    color: $main-elements-color;
+    border: 2px solid $main-elements-color;
+    padding: 0 20px ;
+    line-height: 18px;
+    margin-top: 30px;
+}
+
+.faq__image{
+    position: relative;
+    left: -150px;
+
+    @media(max-width:  $mobile-breakpoing) {
+        left: 0px;
+    }
+}

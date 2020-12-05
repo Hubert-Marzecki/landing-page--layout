@@ -1,0 +1,15 @@
+@import './varibles';
+
+.seo__section{
+    @include container-body;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+.tile__header{
+    @include tile-header
+}
+
+.tile__text{
+    @include tile-text;
+}

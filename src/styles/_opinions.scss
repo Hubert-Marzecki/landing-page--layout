@@ -1,0 +1,14 @@
+@import './varibles';
+
+.opinions__section{
+    margin: 0 auto;
+    background-color: #F4F7F9;
+  }
+.card__text{
+    @include text-normal
+}
+
+.opinion__card{
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+}

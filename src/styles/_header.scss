@@ -1,0 +1,30 @@
+@import './varibles';
+
+.header__section{
+ 
+    @include container-body;
+    font-weight: bold; 
+    font-size: 14px;
+    margin-top: 30px;
+
+    .logo{
+        height: 22px;
+    }
+    .nav{
+        letter-spacing: 0;
+        color: $primary-font-color;
+
+        &__item{
+            margin-right: 24px;
+        }
+    }
+    .cta__button {
+        background-color: $main-elements-color;
+        color: white;
+        height: 40px;
+        font-weight: bold; 
+        line-height: 40px;
+        padding:  0 16px;
+        border-radius: 4px;
+    }
+}

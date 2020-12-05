@@ -1,0 +1,59 @@
+@import "./varibles";
+
+.profit__section {
+    @include container-body;
+   }
+
+.profit__header {
+    @include header-big;
+}   
+
+.text__container{
+    width: 80%;
+    text-align: center;
+    @media(max-width: $mobile-breakpoing) {
+        width: 100%;
+    text-align: left;
+
+         }
+}
+.profit__desc{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    @include text-normal;
+
+    @media(max-width: $mobile-breakpoing) {
+        width: 100%;
+         }
+}
+
+.profit-background-image{
+    position: absolute;
+    width: 120%;
+    top: 50%;
+    left: -15%;
+    transform: translateY(-50%);
+    
+    @media(max-width: $mobile-breakpoing) {
+        display: none;;
+         }
+  }
+  .profit-social-icon-holder{
+    background: url("../assets/section--profit/illustration-segment.png") center center no-repeat;
+    .social-icon{
+        height: 100px;
+    }
+  }
+  
+  .profit__section::before {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../assets/section--profit/illustration-segment.png") no-repeat center center;
+    opacity: 1;
+    content: "";
+  }
+  

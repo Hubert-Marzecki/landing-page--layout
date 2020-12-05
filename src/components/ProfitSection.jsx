@@ -8,23 +8,23 @@ import whatsAppIcon from "../assets/section--profit/contact-whatsapp.png";
 export default function ProfitSection() {
   return (
     <>
-      <section className="profit__section relative bg-green-100">
+      <section className="profit__section relative">
         <BackgroundImage className="profit-background-image" />
-        <div class=" container mx-auto flex px-5 py-64 items-center justify-center flex-col ">
+        <div class="mx-auto flex py-20 sm:py-64 items-center justify-center flex-col ">
           <div className="flex profit-social-icon-holder">
             <div className="profit-social-icon">
-              <img class="social-icon" alt="hero" src={skypeIcon} />
+              <img class="social-icon"  src={skypeIcon} />
             </div>
             <div className="profit-social-icon">
-            <img class="social-icon" alt="hero" src={whatsAppIcon} />
+            <img class="social-icon" src={whatsAppIcon} />
             </div>
           </div>
 
-          <div class="text-center lg:w-2/3 w-full">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          <div class="text__container ">
+            <h2 class="profit__header ">
             Skorzystaj z najszybciej rozwijającej się gałęzi medycyny.
-            </h1>
-            <p class="mb-8 leading-relaxed">
+            </h2>
+            <p class=" profit__desc ">
             Teleporada lekarska na naszym serwisie oznacza potwierdzoną skuteczność terapeutyczną, oszczędność czasu i pieniędzy.
             </p>
           </div>
