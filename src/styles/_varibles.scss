@@ -24,7 +24,6 @@ $mobile-breakpoing: 700px;
 @mixin container-body {
     width: 60%;
     margin: 0 auto;
-
     @media(max-width:  $mobile-breakpoing) {
         width: 90%;
     }
@@ -50,6 +49,12 @@ $mobile-breakpoing: 700px;
     font-size: 1rem;
     line-height: 28px;
     color: $secondary-font-color;
+}
+
+@mixin tab-title-main {
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: $font-above-color
 }
 
 @mixin button {

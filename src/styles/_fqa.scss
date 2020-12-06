@@ -33,3 +33,28 @@
         left: 0px;
     }
 }
+.tab{
+    background-color: $main-elements-color;
+    padding: 1.3em;
+    @include tab-title-main ;
+    border-radius: 4px;
+    margin-top: 4px;
+
+   
+}
+
+.tab__content{
+    padding: 1.3em;
+    @include text-normal;
+}
+
+.tab__nested{
+    .nested__titile{
+    @include tab-title-main ;
+    color: $secondary-font-color;
+    }
+
+    .nested__text{
+
+    }
+}

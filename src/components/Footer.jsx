@@ -117,7 +117,7 @@ export default function Footer() {
               <span className="policy__link">Polityka Prywatności</span>
             </a>
 
-            <span className="inline-flex sm:ml-auto sm:mt-0  items-center ">
+            <span className="inline-flex sm:ml-auto mr-0 sm:mt-0  items-center ">
               Realizacja <EmpressiaLogo className="empressia__logo" />
             </span>
           </div>
