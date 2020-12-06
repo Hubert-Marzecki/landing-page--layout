@@ -1,12 +1,14 @@
 @import './varibles';
 
 .faq__section{
-   @include container-body
+   @include container-body;
+   padding:  100px 0;
   }
 
 .faq__header{
     font-family: "SFNS Display";
     font-size: 40px;
+    line-height: 50px;
     width: 70%;
     
     @media(max-width:  $mobile-breakpoing) {

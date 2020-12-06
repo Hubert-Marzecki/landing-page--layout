@@ -12,17 +12,20 @@ export default function Opinions() {
     { width: 850, itemsToShow: 3 },
     { width: 1150, itemsToShow: 3.3, itemsToScroll: 2 },
     { width: 1450, itemsToShow: 3.3 },
-    { width: 1750, itemsToShow: 3.3 },
+    { width: 1750, itemsToShow: 5.3 },
   ]);
 
   return (
-    <section className="opinions__section">
-     <h2 className="text-center my-4 "> Co mówią zadowoleni klienci </h2>
-      <div className=" relative">
-      {/* <div className=" bg-blue-500 h-full absolute z-10 left-0"> BBB </div> */}
-      <div className="card__vanish bg-blue-500 h-full absolute z-10 right-0 w-25">  </div>
+    
+    <section className="opinions__section__wrapper">
+      <div className="opinions__section">
 
-        <Carousel breakPoints={breakPoints} className="carousel relative">
+     <h2 className="text-center my-4 section__header"> Co mówią zadowoleni klienci </h2>
+      <div className="opinions__carousel__wrapper relative">
+      {/* <div className=" bg-blue-500 h-full absolute z-10 left-0"> BBB </div> */}
+      <div className="card__vanish  h-full absolute z-10 right-0 w-25">  </div>
+
+        <Carousel breakPoints={breakPoints}  className="carousel relative">
 
           {options.map((item) => {
             return (
@@ -51,6 +54,8 @@ export default function Opinions() {
           })}
         </Carousel>
       </div>
+      </div>
+
     </section>
   );
 }

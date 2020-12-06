@@ -9,7 +9,7 @@
 @import '/styles/opinions';
 @import './styles/seoTiles';
 @import './styles/mainCta';
-
+@import './styles/footer';
 
 .App{
   // width: 70%;
@@ -52,22 +52,10 @@ h1{
   width: 70%;
   margin: 0 auto;
   }
-  .footer{
-    width: 70%;
-    margin: 0 auto;
-  }
+  
 
 
-.cta__section{
-  width: 70%;
-  margin: 0 auto;
-  .rec-dot{
-    display: none;
-  }
-}
-.rec-arrow{
-  display: none;
-}
+
 .card__vanish{
   background: linear-gradient(270deg, #FFFFFF 0%, rgba(255,255,255,0.88) 32.78%, rgba(255,255,255,0) 100%);
   height: 432px;

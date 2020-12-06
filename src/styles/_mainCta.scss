@@ -1,0 +1,32 @@
+@import './varibles';
+
+
+.cta__section{
+    @include container-body;
+    background-color: $main-elements-color;
+    color: $font-above-color;
+    padding: 25px 0 ;
+    border-radius: 16px;
+}
+.cta__header{
+    @include header-big;
+}
+
+.cta__button{
+    @include button;
+    background-color: $font-above-color;
+    color: $main-elements-color;
+    padding:  0 20px;
+    margin-top: 32px;
+}
+.cta__checkmarks{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    .checkmark__icon{
+        margin-right: 12px;
+    }
+}

@@ -1,9 +1,20 @@
 @import './varibles';
 
 .opinions__section{
-    margin: 0 auto;
-    background-color: #F4F7F9;
+    padding: 120px 0;
+    width: 85%;
+    margin:  0 auto;
   }
+
+  .opinions__section__wrapper{
+    background-color: #F4F7F9;
+    margin:  0 auto;
+  }
+
+.section__header{
+    @include header-secondary;
+
+}
 .card__text{
     @include text-normal
 }
@@ -11,4 +22,22 @@
 .opinion__card{
     border: 1px solid #ECECEC;
     border-radius: 8px;
+}
+
+.rec-arrow{
+    display: none;
+  }
+.rec-dot{
+    background-color: $secondary-font-color !important;
+    opacity: 8%;
+    box-shadow:  none !important;
+
+}
+.rec-dot_active{
+    background-color: $main-elements-color !important;
+    opacity: 100%;
+}
+
+.opinions__carousel__wrapper{
+    margin-top: 30px;
 }

@@ -26,7 +26,7 @@ export default function Header() {
           <Link to="#" className="nav__item  cursor-pointer">Kontakt</Link>
         </nav>
         <Link to="#">
-        <button className="cta__button inline-flex items-center focus:outline-none ">
+        <button className="header__cta__button inline-flex items-center focus:outline-none ">
           Zapisz się na wizytę online
         </button>
         </Link>

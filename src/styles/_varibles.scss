@@ -1,22 +1,28 @@
 $primary-font-color: #0E0E0E;
 $secondary-font-color: #4A4764;
-$main-elements-color: #4432FF;
+$main-elements-color: hsl(245, 100%, 60%);
 $font-above-color: white;
+$background-color: #F4F7F9;
+@font-face {font-family: "AllRoundGothicW01-Bold"; src: url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.eot"); src: url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.woff") format("woff"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.svg#AllRoundGothicW01-Bold") format("svg"); } 
+
 
 $font-headers:  "AllRoundGothicW01-Bold";
 $font-primary: "Comfortaa";
 
 $mobile-breakpoing: 700px;
 
+
+
+
 @mixin nav-font-bold {
     font-weight: bold; 
-    font-size: 14px;
+    font-size: 0.8rem;
     letter-spacing: 0;
     color: $primary-font-color
 }
 
 @mixin container-body {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 
     @media(max-width:  $mobile-breakpoing) {
@@ -25,7 +31,7 @@ $mobile-breakpoing: 700px;
 }
 
 @mixin header-big {
-    font-size: 56px;
+    font-size: 3rem;
     line-height: 64px;
     font-family: $font-headers;
 
@@ -37,30 +43,30 @@ $mobile-breakpoing: 700px;
 
 @mixin header-secondary{
     font-family: "SFNS Display";
-    font-size: 40px;
+    font-size: 2.4rem;
 }
 
 @mixin text-normal {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 28px;
     color: $secondary-font-color;
 }
 
 @mixin button {
-    font-size: 16px;
+    font-size: 1rem;
     height: 56px ;
     border-radius: 4px;
     line-height: 18px;
 }
 
 @mixin tile-header {
-    font-size: 24px;
+    font-size: 1.5rem;
     height: 40px;
     font-family: "SFNS Display";
     color: $primary-font-color
 }
 @mixin tile-text {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 28px;
     color: $secondary-font-color;
 }

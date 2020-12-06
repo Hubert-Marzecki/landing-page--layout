@@ -31,7 +31,7 @@
 .profit-background-image{
     position: absolute;
     width: 120%;
-    top: 50%;
+    top: 58%;
     left: -15%;
     transform: translateY(-50%);
     
@@ -40,20 +40,24 @@
          }
   }
   .profit-social-icon-holder{
-    background: url("../assets/section--profit/illustration-segment.png") center center no-repeat;
+    // background: url("../assets/section--profit/illustration-segment.png") center center no-repeat;
     .social-icon{
+        position: relative;
         height: 100px;
+        z-index: 100;
     }
   }
   
   .profit__section::before {
+    z-index: 2;
     position: absolute;
-    top: 23%;
+    top: 35%;
     left: 0;
     bottom: 0;
     right: 0;
     background: url("../assets/section--profit/illustration-segment.png") no-repeat center center;
     opacity: 1;
     content: "";
+    height: 50%;
   }
   
