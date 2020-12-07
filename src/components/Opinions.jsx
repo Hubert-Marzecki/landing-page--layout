@@ -17,7 +17,7 @@ export default function Opinions() {
 
   return (
     
-    <section className="opinions__section__wrapper">
+    <section className="opinions__section__wrapper" >
       <div className="opinions__section">
 
      <h2 className="text-center my-4 section__header"> Co mówią zadowoleni klienci </h2>

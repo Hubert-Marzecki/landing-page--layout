@@ -8,9 +8,9 @@ import whatsAppIcon from "../assets/section--profit/contact-whatsapp.png";
 export default function ProfitSection() {
   return (
     <>
-      <section className="profit__section relative">
+      <section className="profit__section relative" data-aos="fade-right">
         <BackgroundImage className="profit-background-image" />
-        <div class="mx-auto flex py-20 sm:py-64 items-center justify-center flex-col ">
+        <div class="mx-auto flex pt-20  items-center justify-center flex-col ">
           <div className="flex profit-social-icon-holder">
             <div className="profit-social-icon">
               <img class="social-icon"  src={skypeIcon} />

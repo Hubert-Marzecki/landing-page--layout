@@ -1,6 +1,8 @@
 $primary-font-color: #0E0E0E;
 $secondary-font-color: #4A4764;
 $main-elements-color: hsl(245, 100%, 60%);
+$main-color-darker: rgb(52,41,197);
+$gray-onHover: rgb(216,216,216);
 $font-above-color: white;
 $background-color: #F4F7F9;
 @font-face {font-family: "AllRoundGothicW01-Bold"; src: url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.eot"); src: url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.woff") format("woff"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.svg#AllRoundGothicW01-Bold") format("svg"); } 
@@ -9,9 +11,12 @@ $background-color: #F4F7F9;
 $font-headers:  "AllRoundGothicW01-Bold";
 $font-primary: "Comfortaa";
 
-$mobile-breakpoing: 600px; 
-$mobile-landscape: 782px;
-$ipads-breakpoint: 992px;
+$mobile-breakpoing: 640px; 
+$mobile-landscape: 768px;
+$small-desktop: 1024px;
+$desktop: 1280px;
+$large-destkop: 1536px;
+
 
 @mixin nav-font-bold {
     font-weight: bold; 
@@ -23,11 +28,11 @@ $ipads-breakpoint: 992px;
 @mixin container-body {
     width: 60%;
     margin: 0 auto;
-    @media(max-width:  $mobile-breakpoing) and (max-width: $mobile-landscape) {
+    @media(max-width:  $mobile-breakpoing) {
         width: 90%;
     }
 
-    @media(max-width:  $mobile-breakpoing) and (max-width: $ipads-breakpoint) {
+    @media(min-width:  $mobile-breakpoing) and (max-width: $small-desktop) {
         width: 90%;
     }
 }
@@ -71,6 +76,17 @@ $ipads-breakpoint: 992px;
     height: 50px ;
     border-radius: 4px;
     line-height: 18px;
+}
+
+@mixin transition-button {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+@mixin get-darker {
+    background-color: $main-color-darker;
+      
 }
 
 @mixin tile-header {

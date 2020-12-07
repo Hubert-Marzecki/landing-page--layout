@@ -2,6 +2,8 @@
 
 .profit__section {
     @include container-body;
+    margin-top: 250px;
+
    }
 
 .profit__header {
@@ -13,8 +15,7 @@
     text-align: center;
     @media(max-width: $mobile-breakpoing) {
         width: 100%;
-    text-align: left;
-
+        text-align: left;
          }
 }
 .profit__desc{
@@ -42,7 +43,10 @@
   }
   .profit-social-icon-holder{
     // background: url("../assets/section--profit/illustration-segment.png") center center no-repeat;
+    z-index: 2;
+
     .social-icon{
+        z-index: 2;
         position: relative;
         height: 100px;
         z-index: 100;

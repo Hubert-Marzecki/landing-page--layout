@@ -7,9 +7,20 @@
     color: $font-above-color;
     padding: 25px 0 ;
     border-radius: 16px;
+    @media(max-width:  $mobile-breakpoing) {
+     width: 100%;
+     padding: 25px 5%;
+    }
+    @media(min-width:  $mobile-breakpoing) and (max-width: $small-desktop) {
+        width: 100%;
+        padding: 25px 5%;
+    }
 }
 .cta__header{
     @include header-big;
+    @media(max-width:  $mobile-breakpoing) {
+        width: 100%;
+       }
 }
 
 .cta__button{
@@ -18,6 +29,14 @@
     color: $main-elements-color;
     padding:  0 20px;
     margin-top: 32px;
+    border: $main-elements-color 2px solid; 
+    @include transition-button;
+
+    &:hover{
+        background-color: $main-elements-color;
+        color: $font-above-color;
+        border: $font-above-color 2px solid; 
+    }
 }
 .cta__checkmarks{
     display: flex;
@@ -25,6 +44,10 @@
     margin-right: 12px;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    @media(max-width:  $mobile-breakpoing) {
+        margin-top: 25px;
+       }
     
     .checkmark__icon{
         margin-right: 12px;

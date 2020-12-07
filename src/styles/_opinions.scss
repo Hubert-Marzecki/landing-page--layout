@@ -4,6 +4,10 @@
     padding: 120px 0;
     width: 85%;
     margin:  0 auto;
+
+    @media(max-width:  $mobile-breakpoing) {
+       padding-top: 50px
+    }
   }
 
   .opinions__section__wrapper{

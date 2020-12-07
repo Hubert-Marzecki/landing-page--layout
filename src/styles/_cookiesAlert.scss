@@ -1,0 +1,25 @@
+@import './varibles';
+
+.cookie__alert{
+
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+    .alert__text {
+        text-align:  center;
+        @include text-normal;
+
+    }
+   .cookies__link{
+    color: $main-elements-color;
+   } 
+   .close__tab{
+
+   }
+
+}

@@ -43,7 +43,7 @@ export default function FQA() {
 
   return (
     <>
-      <div className="faq__section flex flex-wrap relative">
+      <div className="faq__section flex flex-wrap relative " data-aos="fade-right">
         <div className="sm:w-6/12">
           <div className="info__holder">
             <h3 className="faq__header"> Najczęściej zadawane pytania </h3>
@@ -53,13 +53,14 @@ export default function FQA() {
             <img className="faq__image" src={FAQimage} />
           </div>
         </div>
-        <div className=" sm:w-6/12 ">
+        <div className=" sm:w-5/12 lg:ml-8">
          
              <Tab tabTitle={tabsText[0].tabTitle} tabText={tabsText[0].colapseText} nestedTabs={null} />
              <Tab tabTitle={tabsText[1].tabTitle} tabText={tabsText[1].colapseText}  nestedTabs={nestedTabs} />
              <Tab tabTitle={tabsText[2].tabTitle} tabText={tabsText[2].colapseText}  nestedTabs={null} />
            
         </div>
+      
       </div>
     </>
   );

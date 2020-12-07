@@ -7,7 +7,7 @@ export default function Tab({tabTitle, tabText, nestedTabs}) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="tab">
+        <div className="tab" data-aos="zoom-in">
         <p className="tab__title" onClick={() => setIsOpen(!isOpen)}>
                  {tabTitle}
                 </p>

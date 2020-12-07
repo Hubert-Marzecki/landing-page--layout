@@ -10,8 +10,12 @@ import Opinions from './components/Opinions';
 import SeoFriend from './components/SeoTiles';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import CookiesAlert from './components/CookiesAlert';
 
 function App() {
+
+  
+
   return (
     <div className="App">
         <Header />
@@ -22,6 +26,7 @@ function App() {
         <SeoFriend />
         <CTA />
         <Footer />
+        <CookiesAlert />
     </div>
   );
 }

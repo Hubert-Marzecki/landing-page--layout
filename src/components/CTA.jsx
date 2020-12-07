@@ -5,7 +5,7 @@ import check from '../assets/section--cta/check/check-6/icons/ui/check.svg';
 export default function CTA() {
   return (
     <>
-      <section className="cta__section flex flex-wrap items-center container m-0 ">
+      <section className="cta__section flex flex-wrap items-center container m-0 "  data-aos="zoom-out-up">
         <div className="sm:w-1/2 flex flex-wrap">
           <div className="w-1/6">
           </div>

@@ -3,10 +3,11 @@
 
 .hero__section{
     @include container-body ;
-    padding: 100px 0;
+    padding-top: 100px;
     
     @media(max-width: $mobile-breakpoing) {
     padding: 0;
+    margin-top: 50px;
      }
 }
 .header__big{
@@ -22,6 +23,7 @@
     @media(max-width: $mobile-breakpoing) {
        padding-right: 0px;
     }
+  
 }
 
 .buttons__holder{
@@ -33,18 +35,53 @@
     color: $font-above-color;
     margin-right: 16px;
     text-align: left;
+    @include transition-button;
+        
+    &:hover{
+       @include get-darker;
+    }
 
     .button__element{
         width: 56px;
         text-align:  right;
         border-left: 1px solid (rgba($color: #FFFFFF, $alpha: 0.16));
+        position: relative;
 
         .oval{
             border: 3px white solid;
             border-radius: 100%;
             width: 27px;
             height: 27px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+
         }
+
+        .inside__oval{
+        position: absolute;
+         width: 0px;
+         height: 0px;
+         border-radius: 100%;
+         background-color: $font-above-color;
+         position: absolute;
+         left:50%;
+         top:50%;
+         transform: translate(-50%, -50%);
+        }
+        .inside__oval-grow{
+         @include transition-button;
+         position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $font-above-color;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+           }
     }
 }
 .button__faq{
@@ -56,17 +93,30 @@
     @media(max-width: $mobile-breakpoing) {
         margin-top: 10px;
      }
+
+     &:hover{
+        @include transition-button;
+        background-color: $main-elements-color;
+        color: $font-above-color;
+     }
 }
 
 .image__holder{
     position: relative;
     img{
         position: absolute;
-        height: 120%;
-        min-width: 115%;
+        height: 450px;
+        min-width: 450px;
+
+        @media(min-width:  $mobile-breakpoing) and (max-width: $small-desktop) {
+            height: 60%;
+            min-width: 60%;
+        }
     }
     @media(max-width: $mobile-breakpoing) {
         right: 0px;
         display: none;
      }
+
+    
 }

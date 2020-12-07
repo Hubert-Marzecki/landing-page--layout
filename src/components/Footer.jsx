@@ -8,18 +8,18 @@ import { ReactComponent as EmpressiaSygnet } from "../assets/footer/mark-empress
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
-        <div className="footer__inside__container">
-          <div className="  mx-auto flex items-center sm:flex-row flex-col">
+      <footer className="footer ">
+        <div className="footer__inside__container ">
+          <div className="  mx-auto flex items-center sm:flex-row flex-col ">
             <a className=" flex-grow  items-center md:justify-start justify-center ">
-              <EmpressiaSygnet className="empressia__sygnet" />
+              <EmpressiaSygnet className="empressia__sygnet mb-10 sm:mb-0" />
             </a>
             <img src={stars} className="stars" />
-            <span className="rating__data sm:ml-auto sm:mt-0   justify-center sm:justify-start">
+            <span className="rating__data sm:ml-auto sm:mt-0 mt-1  justify-center sm:justify-start">
               5.0 (163 opinie) na
             </span>
-            <img src={znanyLekarzLogo} className="znanyLekarz__logo" />
-            <span className="inline-flex sm:ml-auto sm:mt-0  justify-center sm:justify-start">
+            <img src={znanyLekarzLogo} className="znanyLekarz__logo mt-1 sm:mt-0" />
+            <span className="inline-flex sm:ml-auto sm:mt-0 mt-10  justify-center sm:justify-start">
               <a className="">
                 <FacebookIcon className="social__icon social__icon--facebook" />
               </a>
@@ -31,22 +31,22 @@ export default function Footer() {
 
           <div className="py-12 mx-auto">
             <div className="flex flex-wrap sm:flex-nowrap md:text-left text-center order-first">
-              <div className="lg:w-5/12 md:w-1/2 w-full mr-10 ">
+              <div className="lg:w-5/12 md:w-1/2 w-full sm:mr-10 ">
                 <p>
                   Jeżeli potrzebujesz pomocy związanej ze skórą, włosami,
                   paznokciami lub natury intymnej, jesteś we właściwym miejscu.
                 </p>
 
-                <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center mt-10">
-                  <a className="mr-4">O mnie</a>
-                  <a className="mr-4 ">Opinie</a>
-                  <a className="mr-4">FAQ</a>
-                  <a className="mr-4">Galeria</a>
-                  <a className="mr-4">Blog</a>
+                <nav className="mx-auto sm:flex sm:flex-wrap items-center mt-10 ">
+                  <a className="mr-2 sm:mr-4">O mnie</a>
+                  <a className="mr-2 sm:mr-4 ">Opinie</a>
+                  <a className="mr-2 sm:mr-4">FAQ</a>
+                  <a className="mr-2 sm:mr-4">Galeria</a>
+                  <a className="mr-2 sm:mr-4">Blog</a>
                   <a className="">Kontakt</a>
                 </nav>
               </div>
-              <div className="lg:w-3/12 md:w-1/2 w-full ">
+              <div className="lg:w-3/12 md:w-1/2 w-full mt-10 sm:mt-0 ">
                 <h2 className=" tracking-widest text-sm mb-3">
                   Pomagamy w przypadku
                 </h2>
@@ -109,17 +109,19 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="credits py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a className="flex items-center md:justify-start justify-center ">
+          <div className="credits py-8 mx-auto flex items-center flex-col justify-center ">
+            <a className="flex flex-wrap sm:flex-nowrap items-center md:justify-start sm:justify-center ">
               <span className="">
                 © 2020 Wszelkie prawa zastrzeżone. &nbsp;
               </span>
               <span className="policy__link">Polityka Prywatności</span>
             </a>
 
-            <span className="inline-flex sm:ml-auto mr-0 sm:mt-0  items-center ">
-              Realizacja <EmpressiaLogo className="empressia__logo" />
+            <span className="sm:inline-flex sm:ml-0 lg:ml-auto sm:mt-0  items-center mt-10 text-center sm:text-left">
+            Realizacja 
+            <EmpressiaLogo className="empressia__logo mt-2 sm:mt-0 " />
             </span>
+
           </div>
         </div>
       </footer>

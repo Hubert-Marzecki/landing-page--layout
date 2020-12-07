@@ -3,7 +3,7 @@ import seoTrigger from '../elements/seoTriggers'
 export default function SeoFriend() {
     return (
         <>
-            <div className="seo__section grid-cols-1 md:grid-cols-3 grid gap-4 " >
+            <div className="seo__section grid-cols-1 md:grid-cols-3 grid gap-4 pt-20" >
                   {seoTrigger.map(item => {
                     return (
                       <div class="w-full text-center ">
