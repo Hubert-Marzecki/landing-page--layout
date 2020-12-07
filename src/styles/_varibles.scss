@@ -9,10 +9,9 @@ $background-color: #F4F7F9;
 $font-headers:  "AllRoundGothicW01-Bold";
 $font-primary: "Comfortaa";
 
-$mobile-breakpoing: 700px;
-
-
-
+$mobile-breakpoing: 600px; 
+$mobile-landscape: 782px;
+$ipads-breakpoint: 992px;
 
 @mixin nav-font-bold {
     font-weight: bold; 
@@ -24,7 +23,11 @@ $mobile-breakpoing: 700px;
 @mixin container-body {
     width: 60%;
     margin: 0 auto;
-    @media(max-width:  $mobile-breakpoing) {
+    @media(max-width:  $mobile-breakpoing) and (max-width: $mobile-landscape) {
+        width: 90%;
+    }
+
+    @media(max-width:  $mobile-breakpoing) and (max-width: $ipads-breakpoint) {
         width: 90%;
     }
 }
@@ -54,12 +57,18 @@ $mobile-breakpoing: 700px;
 @mixin tab-title-main {
     font-size: 1.2rem;
     line-height: 28px;
-    color: $font-above-color
+    color: $font-above-color;
+}
+
+@mixin tab-title-nested {
+    font-size: 1rem;
+    line-height: 28px;
+    color: $main-elements-color
 }
 
 @mixin button {
     font-size: 1rem;
-    height: 56px ;
+    height: 50px ;
     border-radius: 4px;
     line-height: 18px;
 }
@@ -70,6 +79,7 @@ $mobile-breakpoing: 700px;
     font-family: "SFNS Display";
     color: $primary-font-color
 }
+
 @mixin tile-text {
     font-size: 1rem;
     line-height: 28px;

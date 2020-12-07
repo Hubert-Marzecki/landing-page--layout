@@ -1,77 +1,64 @@
 import FAQimage from "../assets/section--faq/illustration-faq.png";
-import {Collapse} from 'react-collapse';
+import { Collapse } from "react-collapse";
 import { useEffect, useState } from "react";
+import Tab from './Tab';
+import NestedTab from './NestedTab';
 
 export default function FQA() {
   const tabsText = [
     {
-      tabText: "Jakie są korzyści teleporady lekarskiej na naszym serwisie?",
-      colapseText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
-    }, 
+      tabTitle: "Jakie są korzyści teleporady lekarskiej na naszym serwisie?",
+      colapseText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    },
     {
-      tabText: "Jakie są korzyści teleporady lekarskiej na naszym serwisie? ",
-      colapseText:"2222222222",
-      nesetdTitle: "DA",
-      nestedText: "NESTED TEXT"
-    }, 
+      tabTitle: "Jakie są korzyści teleporady lekarskiej na naszym serwisie? ",
+      colapseText: "",
+    },
     {
-      tabText: "Jakie są korzyści teleporady lekarskiej na naszym serwisie? ",
-      colapseText:"33333333333"
+      tabTitle: "Jakie są korzyści teleporady lekarskiej na naszym serwisie? ",
+      colapseText: "33333333333",
+    },
+  ];
+
+  const nestedTabs =[
+    {
+      tabTitle: "Jakie są korzyści teleporady lekarskiej na naszym serwisie?",
+      colapseText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
     }
-   ]
-  const initialState = []
-  initialState.length = tabsText.length;
-  initialState.fill(false)
+  ]
+  const [tabs, setTabs] = useState(tabsText);
 
-    const [openTabs, setOpenTabs] = useState(initialState);
-    const [nestedTabOpen, setNestedTabOpen] = useState(false)
+  // function isOpen(index) {
+  //   let items = [...tabs];
+  //   let item = items[index];
+  //   items[index].isOpen = !item.isOpen;
+  //   setTabs(items);
+  // }
 
-function isOpen(index) {
-  let items = [...openTabs];
-  let item = items[index];
-  items[index] = !item;
-  setOpenTabs(items)
-}
-
-useEffect(() => {
-console.log(openTabs);
-},[openTabs])
+  useEffect(() => {
+    console.log(tabs);
+  }, [tabs]);
 
   return (
     <>
-      <div className="faq__section flex ">
+      <div className="faq__section flex flex-wrap relative">
         <div className="sm:w-6/12">
           <div className="info__holder">
             <h3 className="faq__header"> Najczęściej zadawane pytania </h3>
             <button className="faq__button">Sprawdź całe FAQ</button>
           </div>
           <div className="img__holder">
-          <img className="faq__image" src={FAQimage} />
+            <img className="faq__image" src={FAQimage} />
           </div>
         </div>
-        <div className="bg-red-100 w-6/12">
-
-        {tabsText.map((item, index) => {
-          return (
-            <div>
-            <p className="tab" onClick={() => isOpen(index)}>{item.tabText} </p>
-            <Collapse isOpened={openTabs[index]} >
-            <p className="tab__content">{item.colapseText}</p>
-
-            {item.nesetdTitle !== undefined ? 
-            <>
-            <p onClick={() => setNestedTabOpen(!nestedTabOpen)} className="nested__tab">{item.nesetdTitle} </p>
-
-             <Collapse isOpened={nestedTabOpen} >
-             <p className="tab__content">{item.nestedText}</p>
-             </Collapse>
-            </> : <> </>}
-            </Collapse>
-          </div>
-          )
-          
-        })}
-
+        <div className=" sm:w-6/12 ">
+         
+             <Tab tabTitle={tabsText[0].tabTitle} tabText={tabsText[0].colapseText} nestedTabs={null} />
+             <Tab tabTitle={tabsText[1].tabTitle} tabText={tabsText[1].colapseText}  nestedTabs={nestedTabs} />
+             <Tab tabTitle={tabsText[2].tabTitle} tabText={tabsText[2].colapseText}  nestedTabs={null} />
+           
         </div>
       </div>
     </>

@@ -6,7 +6,8 @@
 }
 
 .tile__header{
-    @include tile-header
+    @include tile-header;
+    height: fit-content;
 }
 
 .tile__text{

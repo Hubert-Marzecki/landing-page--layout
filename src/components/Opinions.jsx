@@ -29,18 +29,18 @@ export default function Opinions() {
 
           {options.map((item) => {
             return (
-              <div class="opinion__card bg-white p-8 mr-4 ml-0">
+              <div class="opinion__card bg-white p-8 ">
                 <div className="opinion__data flex ">
                     <img className="stars__image" src={stars} />
                     <span className="data__date ml-auto mr-2 ">{item.date} </span>
                 </div>
                 <p class="mt-8 mb-6 card__text">{item.text}</p>
-                <div class="inline-flex items-center mt-10">
+                <div class="user__info flex items-center">
                   
                   <img
                     alt="userImg"
                     src={item.userName === "" ?  userBlankAvatar : "https://dummyimage.com/106x106"}
-                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    class="user__img "
                   />
                   <span class="flex-grow flex flex-col pl-4">
                     <span class="title-font font-medium text-gray-900">

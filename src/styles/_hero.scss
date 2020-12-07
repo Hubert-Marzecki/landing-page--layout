@@ -50,7 +50,7 @@
 .button__faq{
     @include button;
     border: $main-elements-color 2px solid;
-    width: 166px;
+    padding: 0 20px;
     color: $main-elements-color;
 
     @media(max-width: $mobile-breakpoing) {

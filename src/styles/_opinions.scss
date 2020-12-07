@@ -22,6 +22,16 @@
 .opinion__card{
     border: 1px solid #ECECEC;
     border-radius: 8px;
+    width: 500px;
+    margin: 10px;
+
+    .user__img{
+        height: 50px;
+    }
+
+    .user__info{
+        margin-top: 2em;
+    }
 }
 
 .rec-arrow{
@@ -37,7 +47,23 @@
     background-color: $main-elements-color !important;
     opacity: 100%;
 }
+.rec-pagination{
+    @media(max-width:  $mobile-breakpoing) {
+    width: 80%;
+    }
+}
 
 .opinions__carousel__wrapper{
     margin-top: 30px;
 }
+
+
+.card__vanish{
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255,255,255,0.88) 32.78%, rgba(255,255,255,0) 100%);
+    height: 432px;
+    width: 196px;
+    @media(max-width:  $mobile-breakpoing) {
+        display: none
+    }
+  }
+  

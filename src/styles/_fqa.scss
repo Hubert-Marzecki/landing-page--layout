@@ -27,20 +27,19 @@
 
 .faq__image{
     position: relative;
-    left: -150px;
+    left: -120px;
 
     @media(max-width:  $mobile-breakpoing) {
         left: 0px;
     }
 }
-.tab{
+.tab__title{
     background-color: $main-elements-color;
     padding: 1.3em;
     @include tab-title-main ;
     border-radius: 4px;
     margin-top: 4px;
-
-   
+    cursor: pointer;
 }
 
 .tab__content{
@@ -54,7 +53,20 @@
     color: $secondary-font-color;
     }
 
-    .nested__text{
-
-    }
 }
+.nested__tab__title{
+    @include tab-title-nested;
+    font-weight: 600;
+    padding-left: 1.3em;
+    margin-bottom: 1em;
+    cursor: pointer;
+
+}
+.nested__tab__content{
+    padding-left: 1.3em;
+    padding-bottom: 3rem;
+    @include text-normal;
+}
+.ReactCollapse--collapse {
+    transition: height 800ms;
+  }
