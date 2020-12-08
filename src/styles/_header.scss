@@ -25,6 +25,16 @@
 
             }
         }
+      
+    }
+      .nav__link{
+        display: inline-block;
+        list-style:  none;
+        padding: 0px 0px;
+        margin-top: 12px;
+        margin-right: 20px;
+        cursor: pointer;
+        // inline-block no-underline  hover:text-underline py-2 lx:px-4 md:px-2  cursor-pointer
     }
     .nav--isHidden{
         display: none;
@@ -44,5 +54,8 @@
         &:hover{
            @include get-darker;
         }
+    }
+    .nav__item--cta{
+        margin-left: 90px;
     }
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Collapse } from "react-collapse";
+import arrow from '../assets/section--faq/arrow.png';
 
 export default function NestedTab({tabTitle, tabText}) {
 
@@ -10,6 +11,7 @@ export default function NestedTab({tabTitle, tabText}) {
         <p className="nested__tab__title" onClick={() => setIsOpen(!isOpen)}>
                  {tabTitle}
                 </p>
+              
                 <Collapse isOpened={isOpen} >
                   <p className="nested__tab__content">{tabText}</p>
                 </Collapse>

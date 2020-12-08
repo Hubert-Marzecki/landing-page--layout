@@ -38,30 +38,30 @@ export default function Header() {
 		<div  class={ isOpen? classOpen :  classHidden } >
 			<ul class="list-reset lg:flex justify-end mr-auto">
         <li class="nav__item">
-        <Link to="#" className=" inline-block  no-underline  hover:text-underline py-2 lx:px-4 md:px-2 cursor-pointer">O nas</Link>
+        <Link to="#" className="nav__link ">O nas</Link>
        </li>
         <li class="nav__item">
-          <Link to="#" className="inline-block no-underline  hover:text-underline py-2 lx:px-4 md:px-2  cursor-pointer">Opinie</Link>
+          <Link to="#" className="nav__link ">Opinie</Link>
        </li>
         
           <li class="nav__item">
-          <Link to="#" className="inline-block  no-underline  hover:text-underline py-2 lx:px-4 md:px-2  cursor-pointer">FAQ</Link>
+          <Link to="#" className="nav__link">FAQ</Link>
        </li>
         
           <li class="nav__item">
-          <Link to="#" className=" inline-block  no-underline  hover:text-underline py-2 lx:px-4 md:px-2 cursor-pointer">Galeria</Link>
+          <Link to="#" className="nav__link ">Galeria</Link>
        </li>
         
           <li class="nav__item">
-          <Link to="#" className=" inline-block  no-underline  hover:text-underline py-2 lx:px-4 md:px-2 cursor-pointer">Blog</Link>
+          <Link to="#" className="nav__link">Blog</Link>
           </li>
         
-          <li class="xl:mr-32 md:mr-0  nav__item">
-          <Link to="#" className=" inline-block  no-underline  hover:text-underline py-2 lx:px-4 md:px-2 cursor-pointer">Kontakt</Link>
+          <li class=" nav__item">
+          <Link to="#" className="nav__link ">Kontakt</Link>
           </li>
-          <li class="ml-auto self-end">
+          <li class="nav__item--cta ml-24 self-end">
           <Link to="#">
-        <button className=" header__cta__button lg:ml-10">
+           <button className=" header__cta__button lg:ml-10">
           Zapisz się na wizytę online
         </button>
         </Link>

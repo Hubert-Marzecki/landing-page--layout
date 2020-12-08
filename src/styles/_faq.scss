@@ -18,6 +18,7 @@
     @media(max-width:  $mobile-breakpoing) {
         width: 100%;
     }
+   
 }
 
 .faq__button{
@@ -55,6 +56,13 @@
         left: -80px;
     }
 }
+
+.tab{
+    width: 110%;
+    @media(max-width:  $mobile-breakpoing) {
+    width: 100%;
+    }
+}
 .tab__title{
     background-color: $main-elements-color;
     padding: 1.3em;
@@ -62,12 +70,47 @@
     border-radius: 4px;
     margin-top: 4px;
     cursor: pointer;
+
+    .tab__title__text{
+        width: 80%;
+
+        @media(max-width:  $mobile-breakpoing) {
+            width: 100%;
+            }
+    }
+
+    .tab__arrow__holder{
+        position: relative;
+    }
+        
+    
+
     @include  transition-button ; 
     &:hover{
         background-color: $main-color-darker;
     }
     font-family: 'Comfortaa', cursive;
 }
+.arrow{
+    position: absolute;
+    left: 70%;
+    z-index: 100;
+    width: 10px;
+    height: auto;
+    transform: rotate(270deg);
+    @include  transition-button ; 
+}
+
+.arrow--open{
+    position: absolute;
+    left: 70%;
+    z-index: 100;
+    width: 10px;
+    height: auto;
+    transform: rotate(90deg);
+    @include  transition-button ; 
+}
+
 
 .tab__content{
     padding: 1em;
