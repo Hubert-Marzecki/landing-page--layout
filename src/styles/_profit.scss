@@ -3,7 +3,9 @@
 .profit__section {
     @include container-body;
     margin-top: 250px;
-
+    @media(max-width: $mobile-breakpoing) {
+        margin-top: 20px;
+         }
    }
 
 .profit__header {

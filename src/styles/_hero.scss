@@ -106,7 +106,7 @@
     img{
         position: absolute;
         height: 450px;
-        min-width: 450px;
+        min-width: 550px;
 
         @media(min-width:  $mobile-breakpoing) and (max-width: $small-desktop) {
             height: 60%;

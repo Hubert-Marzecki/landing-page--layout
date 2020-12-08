@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       <footer className="footer ">
         <div className="footer__inside__container ">
-          <div className="  mx-auto flex items-center sm:flex-row flex-col ">
+          <div className="social__info  mx-auto flex items-center sm:flex-row flex-col ">
             <a className=" flex-grow  items-center md:justify-start justify-center ">
               <EmpressiaSygnet className="empressia__sygnet mb-10 sm:mb-0" />
             </a>
@@ -37,7 +37,7 @@ export default function Footer() {
                   paznokciami lub natury intymnej, jesteś we właściwym miejscu.
                 </p>
 
-                <nav className="mx-auto sm:flex sm:flex-wrap items-center mt-10 ">
+                <nav className="mx-auto sm:flex sm:flex-wrap items-center mt-10 footer__nav">
                   <a className="mr-2 sm:mr-4">O mnie</a>
                   <a className="mr-2 sm:mr-4 ">Opinie</a>
                   <a className="mr-2 sm:mr-4">FAQ</a>
@@ -47,60 +47,60 @@ export default function Footer() {
                 </nav>
               </div>
               <div className="lg:w-3/12 md:w-1/2 w-full mt-10 sm:mt-0 ">
-                <h2 className=" tracking-widest text-sm mb-3">
+                <h2 className="footer__section__title">
                   Pomagamy w przypadku
                 </h2>
                 <nav className="list-none mb-10">
-                  <li>
-                    <a className="">lorem ipsum dolor sit amet</a>
+                  <li className="footer__articel__link ">
+                    <a className=" ">lorem ipsum dolor sit amet</a>
                   </li>
-                  <li>
+                  <li className="footer__articel__link ">
                     <a className="">dermoscopy</a>
                   </li>
-                  <li>
+                  <li className="footer__articel__link ">
                     <a className="">
                       skin biopsy with a histological examination
                     </a>
                   </li>
-                  <li>
+                  <li className="footer__articel__link ">
                     <a className="">
                       curettage e.g. focus of molluscum contagiosum
                     </a>
                   </li>
-                  <li>
+                  <li className="footer__articel__link ">
                     <a className="">electrocoagulation</a>
                   </li>
                 </nav>
               </div>
 
               <div className="lg:w-4/12 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                <h2 className="footer__section__title">
                   Najpopularniejsze wpisy
                 </h2>
                 <nav className="list-none mb-10">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
+                  <li className="footer__articel__link ">
+                    <a className="">
                       Obowiązkowo na lato. 9 rzeczy, które warto wiedzieć o
                       filtrach SPF
                     </a>
                   </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
+                  <li  className="footer__articel__link ">
+                    <a className="">
                       Jak walczyć z trądzikiem w każdym wieku?
                     </a>
                   </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
+                  <li  className="footer__articel__link ">
+                    <a className="">
                       5 zasad bezpiecznego opalania
                     </a>
                   </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
+                  <li  className="footer__articel__link ">
+                    <a className="">
                       Jak przygotować się do wizyty u dermatologa?
                     </a>
                   </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">
+                  <li  className="footer__articel__link ">
+                    <a className="">
                       Skutecznie pozbądź się zaczerwienień na twarzy
                     </a>
                   </li>
@@ -109,15 +109,15 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="credits py-8 mx-auto flex items-center flex-col justify-center ">
-            <a className="flex flex-wrap sm:flex-nowrap items-center md:justify-start sm:justify-center ">
+          <div className="credits flex">
+            <a className="mr-auto">
               <span className="">
                 © 2020 Wszelkie prawa zastrzeżone. &nbsp;
               </span>
               <span className="policy__link">Polityka Prywatności</span>
             </a>
 
-            <span className="sm:inline-flex sm:ml-0 lg:ml-auto sm:mt-0  items-center mt-10 text-center sm:text-left">
+            <span className="sm:inline-flex ml-auto  sm:mt-0  items-center mt-10 text-center sm:text-left">
             Realizacja 
             <EmpressiaLogo className="empressia__logo mt-2 sm:mt-0 " />
             </span>

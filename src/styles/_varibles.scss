@@ -6,7 +6,10 @@ $gray-onHover: rgb(216,216,216);
 $font-above-color: white;
 $background-color: #F4F7F9;
 @font-face {font-family: "AllRoundGothicW01-Bold"; src: url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.eot"); src: url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.woff") format("woff"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8df141f447c5686cf9dbae8dabb1e71a.svg#AllRoundGothicW01-Bold") format("svg"); } 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@font-face {font-family: "SFNS Display"; src: url("//db.onlinewebfonts.com/t/9e14b4e72dec1db9a60d2636bbfe64f2.eot"); src: url("//db.onlinewebfonts.com/t/9e14b4e72dec1db9a60d2636bbfe64f2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e14b4e72dec1db9a60d2636bbfe64f2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e14b4e72dec1db9a60d2636bbfe64f2.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e14b4e72dec1db9a60d2636bbfe64f2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e14b4e72dec1db9a60d2636bbfe64f2.svg#SFNS Display") format("svg"); } 
 
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
 $font-headers:  "AllRoundGothicW01-Bold";
 $font-primary: "Comfortaa";
@@ -20,7 +23,7 @@ $large-destkop: 1536px;
 
 @mixin nav-font-bold {
     font-weight: bold; 
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0;
     color: $primary-font-color
 }
@@ -38,7 +41,7 @@ $large-destkop: 1536px;
 }
 
 @mixin header-big {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 64px;
     font-family: $font-headers;
 
@@ -50,17 +53,18 @@ $large-destkop: 1536px;
 
 @mixin header-secondary{
     font-family: "SFNS Display";
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 @mixin text-normal {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 28px;
     color: $secondary-font-color;
+    font-family: 'Comfortaa', cursive;
 }
 
 @mixin tab-title-main {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 28px;
     color: $font-above-color;
 }
@@ -76,6 +80,8 @@ $large-destkop: 1536px;
     height: 50px ;
     border-radius: 4px;
     line-height: 18px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
 }
 
 @mixin transition-button {

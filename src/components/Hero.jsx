@@ -8,7 +8,7 @@ export default function Hero() {
 
 
   return (
-      <section className="hero__section flex flex-wrap md:flex-nowrap" data-aos="fade-up">
+      <section className="hero__section flex flex-wrap" data-aos="fade-up">
         <div className="w-8/12 md:w-6/12">
           <div>
             <h1 className="header__big"> Konsultacje z lekarzami online </h1>

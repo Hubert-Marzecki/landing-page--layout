@@ -15,8 +15,8 @@ export default function Opinions() {
     { width: 1750, itemsToShow: 5.3 },
   ]);
 
+
   return (
-    
     <section className="opinions__section__wrapper" >
       <div className="opinions__section">
 

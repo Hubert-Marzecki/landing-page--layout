@@ -5,11 +5,13 @@
    padding-top: 300px;
    @media(max-width:  $mobile-breakpoing) {
     padding-top: 50px;
+
 }
   }
 
 .faq__header{
-    font-family: "SFNS Display";
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
     font-size: 40px;
     line-height: 50px;
     width: 70%;
@@ -36,6 +38,16 @@
 .faq__image{
     position: relative;
     left: -120px;
+
+    &::before {
+        z-index: 10;
+        position: absolute;
+        background: url("../assets/section--profit/illustration-segment.png") no-repeat center center;
+        opacity: 1;
+        content: "XXX";
+        height: 50%;
+      }
+
     @media(max-width:  $mobile-breakpoing) {
         left: 0px;
     }
@@ -54,6 +66,7 @@
     &:hover{
         background-color: $main-color-darker;
     }
+    font-family: 'Comfortaa', cursive;
 }
 
 .tab__content{
@@ -74,7 +87,7 @@
     padding-left: 1.3em;
     margin-bottom: 1em;
     cursor: pointer;
-
+    font-family: 'Comfortaa', cursive;
 }
 .nested__tab__content{
     padding-left: 1.3em;
