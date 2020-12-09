@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <Router>
-      <div className="bg-white w-full z-50 top-0 fixed h-20">
+      <div className="bg-white w-full z-50 top-0 fixed h-20 header-wrapper">
         <header className="header__section">
           <nav className="nav flex items-center flex-wrap bg-white py-5 fixed w-full sm:w-7/12 xl:w-7/12 z-50 top-0 rounded  md:text-left">
             <div className="flex items-center flex-shrink-0 text-white ">

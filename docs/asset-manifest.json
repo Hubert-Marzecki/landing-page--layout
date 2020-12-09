@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/recruitment-empressia/static/css/main.53b0db9d.chunk.css",
-    "main.js": "/recruitment-empressia/static/js/main.82cccabe.chunk.js",
-    "main.js.map": "/recruitment-empressia/static/js/main.82cccabe.chunk.js.map",
+    "main.css": "/recruitment-empressia/static/css/main.c040cfe0.chunk.css",
+    "main.js": "/recruitment-empressia/static/js/main.3652a4b5.chunk.js",
+    "main.js.map": "/recruitment-empressia/static/js/main.3652a4b5.chunk.js.map",
     "runtime-main.js": "/recruitment-empressia/static/js/runtime-main.19c25cf2.js",
     "runtime-main.js.map": "/recruitment-empressia/static/js/runtime-main.19c25cf2.js.map",
     "static/css/2.30fbed10.chunk.css": "/recruitment-empressia/static/css/2.30fbed10.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.caf6b094.chunk.js.map": "/recruitment-empressia/static/js/3.caf6b094.chunk.js.map",
     "index.html": "/recruitment-empressia/index.html",
     "static/css/2.30fbed10.chunk.css.map": "/recruitment-empressia/static/css/2.30fbed10.chunk.css.map",
-    "static/css/main.53b0db9d.chunk.css.map": "/recruitment-empressia/static/css/main.53b0db9d.chunk.css.map",
+    "static/css/main.c040cfe0.chunk.css.map": "/recruitment-empressia/static/css/main.c040cfe0.chunk.css.map",
     "static/js/2.cc960f58.chunk.js.LICENSE.txt": "/recruitment-empressia/static/js/2.cc960f58.chunk.js.LICENSE.txt",
     "static/media/5.82ce1d11.svg": "/recruitment-empressia/static/media/5.82ce1d11.svg",
     "static/media/5.bb52a534.svg": "/recruitment-empressia/static/media/5.bb52a534.svg",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.19c25cf2.js",
     "static/css/2.30fbed10.chunk.css",
     "static/js/2.cc960f58.chunk.js",
-    "static/css/main.53b0db9d.chunk.css",
-    "static/js/main.82cccabe.chunk.js"
+    "static/css/main.c040cfe0.chunk.css",
+    "static/js/main.3652a4b5.chunk.js"
   ]
 }
