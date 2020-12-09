@@ -46,7 +46,7 @@ export default function Footer() {
                   paznokciami lub natury intymnej, jesteś we właściwym miejscu.
                 </p>
 
-                <nav className="mx-auto sm:flex sm:flex-wrap items-center mt-10 footer__nav">
+                <nav className="mx-auto flex flex-wrap items-center mt-10 footer__nav">
                   <Router>
                     <Link to="" className="nav__link ">
                       O mnie
@@ -63,7 +63,7 @@ export default function Footer() {
                     <Link to="" className="nav__link ">
                       Blog
                     </Link>
-                    <Link to="" className="">
+                    <Link to="" className="nav__link">
                       Kontakt
                     </Link>
                   </Router>

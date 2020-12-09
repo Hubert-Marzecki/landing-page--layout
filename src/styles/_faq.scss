@@ -104,6 +104,10 @@
   height: auto;
   transform: rotate(270deg);
   @include transition-button;
+
+  @media (max-width: $small-desktop) {
+    left: 70%;
+  }
 }
 
 .arrow--open {
