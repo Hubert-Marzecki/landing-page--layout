@@ -2,6 +2,7 @@
   "name": "empresia-home",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hubert-marzecki.github.io/recruitment-empressia/",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "hamburger-react": "^2.3.0",

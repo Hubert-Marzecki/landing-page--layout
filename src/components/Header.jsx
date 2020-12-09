@@ -13,15 +13,15 @@ export default function Header() {
   return (
     <Router>
       <div className="bg-white w-full z-50 top-0 fixed h-20">
-        <header className="header__section ">
-          <nav className="nav flex items-center flex-wrap bg-white py-5 fixed w-screen sm:w-7/12 xl:w-7/12 z-50 top-0 rounded  md:text-left">
+        <header className="header__section">
+          <nav className="nav flex items-center flex-wrap bg-white py-5 fixed w-full sm:w-7/12 xl:w-7/12 z-50 top-0 rounded  md:text-left">
             <div className="flex items-center flex-shrink-0 text-white ">
               <Link to="#" className="flex items-center  cursor-pointer">
-                <EmpressiaLogo className="logo -ml-2" />
+                <EmpressiaLogo className="logo -ml-4" />
               </Link>
             </div>
 
-            <div class="block lg:hidden mr-8 sm:mr-12 md:mr-24 ml-auto ">
+            <div class="block lg:hidden mr-2 ml-auto">
               <Hamburger toggled={isOpen} toggle={setIsOpen} />
             </div>
 
@@ -61,7 +61,7 @@ export default function Header() {
                     Kontakt
                   </Link>
                 </li>
-                <li className="nav__item__cta md:-mr-3">
+                <li className="nav__item__cta sm:-mr-3">
                   <Link to="#">
                     <button className=" header__cta__button ">
                       Zapisz się na wizytę online
