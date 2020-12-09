@@ -11,8 +11,8 @@ export default function Opinions() {
     { width: 550, itemsToShow: 1.4, itemsToScroll: 2, pagination: false },
     { width: 850, itemsToShow: 1.4 },
     { width: 1150, itemsToShow: 2.8, itemsToScroll: 2 },
-    { width: 1450, itemsToShow: 2.3 },
-    { width: 1750, itemsToShow: 3.3 },
+    { width: 1450, itemsToShow: 3.3 },
+    { width: 1750, itemsToShow: 4.3 },
   ]);
 
   return (
