@@ -1,5 +1,4 @@
 import FAQimage from "../assets/section--faq/illustration-faq.png";
-import { useEffect, useState } from "react";
 import Tab from "./Tab";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 
@@ -16,7 +15,8 @@ export default function FQA() {
     },
     {
       tabTitle: "Jakie są korzyści teleporady lekarskiej na naszym serwisie? ",
-      colapseText: "33333333333",
+      colapseText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
     },
   ];
 
@@ -27,11 +27,6 @@ export default function FQA() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
     },
   ];
-  const [tabs, setTabs] = useState(tabsText);
-
-  useEffect(() => {
-    console.log(tabs);
-  }, [tabs]);
 
   return (
     <>
@@ -40,14 +35,13 @@ export default function FQA() {
           <div className="info__holder">
             <h3 className="faq__header"> Najczęściej zadawane pytania </h3>
             <Router>
-            <Link to="#">
-              <button className="faq__button">Sprawdź całe FAQ</button>
-            </Link>
+              <Link to="#">
+                <button className="faq__button">Sprawdź całe FAQ</button>
+              </Link>
             </Router>
-            
           </div>
           <div className="img__holder">
-            <img className="faq__image" src={FAQimage} />
+            <img alt="" className="faq__image" src={FAQimage} />
           </div>
         </div>
         <div className="sm:w-5/12 lg:ml-8">

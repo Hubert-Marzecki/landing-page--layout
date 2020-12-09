@@ -12,7 +12,11 @@ export default function Tab({ tabTitle, tabText, nestedTabs }) {
         <p className="tab__title__text">{tabTitle}</p>
         <div className="tab__arrow__holder">
           <div className={"tab__arrow w-2 ml-10 mt-1"}>
-            <img className={!isOpen ? "arrow" : "arrow--open"} src={arrow} />
+            <img
+              className={!isOpen ? "arrow" : "arrow--open"}
+              src={arrow}
+              alt="ikona strzałki"
+            />
           </div>
         </div>
       </div>

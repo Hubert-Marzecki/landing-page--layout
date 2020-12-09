@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import arrow from "../assets/section--faq/arrow.png";
 
 export default function NestedTab({ tabTitle, tabText }) {
   const [isOpen, setIsOpen] = useState(false);

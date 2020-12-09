@@ -1,25 +1,34 @@
-export default function OpinionTile() {
+import stars from "../assets/section--opinions/card-opinion-opinions/default/opinions/default/Element/Stars/5.svg";
+import userBlankAvatar from "../assets/section--opinions/card-opinion-opinions/default/opinions/default/icon.svg";
+
+export default function OpinionTile({ opinion }) {
   return (
-    <>
-      <div class="h-full rounded">
-        <p class="leading-relaxed mb-6">
-          Synth chartreuse iPhone lomo cray raw denim brunch everyday carry
-          neutra before they sold out fixie 90's microdosing. Tacos pinterest
-          fanny pack venmo, post-ironic heirloom try-hard pabst authentic
-          iceland.
-        </p>
-        <a class="inline-flex items-center">
-          <img
-            alt="testimonial"
-            src="https://dummyimage.com/106x106"
-            class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-          />
-          <span class="flex-grow flex flex-col ">
-            <span class="title-font font-medium ">Holden Caulfield</span>
-            <span class="text-gray-500 text-sm">UI DEVELOPER</span>
-          </span>
-        </a>
+    <div className="opinion__card bg-white p-8 ">
+      <div className="opinion__data flex ">
+        <img
+          className="stars__image"
+          src={stars}
+          alt="obraz przedstawiający obrazek użytkownika"
+        />
+        <span className="data__date ml-auto mr-2 ">{opinion.date}</span>
       </div>
-    </>
+      <p className="mt-8 mb-6 card__text">{opinion.text}</p>
+      <div className="user__info flex items-center">
+        <img
+          alt={
+            opinion.userName === ""
+              ? "awatar domyślny"
+              : "awatar użytkownika portalu"
+          }
+          src={opinion.userName === "" ? userBlankAvatar : opinion.userImg}
+          className="user__img "
+        />
+        <span className="flex-grow flex flex-col pl-4">
+          <span className="title-font font-medium text-gray-900">
+            {opinion.userName}
+          </span>
+        </span>
+      </div>
+    </div>
   );
 }

@@ -1,12 +1,9 @@
 @import "./varibles";
 
-
 .opinions__section__wrapper {
-    background-color: #f4f7f9;
-
+  background-color: #f4f7f9;
 }
 .opinions__section {
- 
   padding: 50px 0;
   width: 85%;
   margin: 100px auto 0px;
@@ -19,7 +16,7 @@
 .section__header {
   @include header-secondary;
   font-weight: bolder;
-  font-family: "Comfortaa", cursive;
+  font-family: $font-headers--secondary;
 }
 .card__text {
   @include text-normal;
@@ -31,7 +28,7 @@
   width: 500px;
   margin: 10px;
   font-family: "Comfortaa", cursive;
-
+  min-height: 320px;
   @media (max-width: $mobile-breakpoing) {
     min-height: 400px;
   }
@@ -73,8 +70,6 @@
   }
 }
 
-
-
 .card__vanish {
   background: linear-gradient(
     270deg,
@@ -92,4 +87,3 @@
     display: none;
   }
 }
-

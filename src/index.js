@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "tailwindcss/tailwind.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();

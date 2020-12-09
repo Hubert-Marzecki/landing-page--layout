@@ -36,8 +36,11 @@ $background-color: #f4f7f9;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 $font-headers: "AllRoundGothicW01-Bold";
+$font-headers--secondary: "Poppins", sans-serif;
 $font-primary: "Comfortaa";
 
 $mobile-breakpoing: 640px;
@@ -48,7 +51,7 @@ $large-destkop: 1536px;
 
 @mixin nav-font-bold {
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   letter-spacing: 0;
   color: $primary-font-color;
 }
@@ -63,10 +66,14 @@ $large-destkop: 1536px;
   @media (min-width: $mobile-breakpoing) and (max-width: $small-desktop) {
     width: 90%;
   }
+
+  @media (min-width: $small-desktop) and (max-width: $desktop) {
+    width: 90%;
+  }
 }
 
 @mixin header-big {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   line-height: 64px;
   font-family: $font-headers;
 
@@ -78,24 +85,24 @@ $large-destkop: 1536px;
 
 @mixin header-secondary {
   font-family: "SFNS Display";
-  font-size: 2.2rem;
+  font-size: 2.2em;
 }
 
 @mixin text-normal {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   line-height: 28px;
   color: $secondary-font-color;
   font-family: "Comfortaa", cursive;
 }
 
 @mixin tab-title-main {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 28px;
   color: $font-above-color;
 }
 
 @mixin tab-title-nested {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 28px;
   color: $main-elements-color;
 }

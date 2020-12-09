@@ -15,19 +15,24 @@ export default function Footer() {
             <div className=" flex-grow  items-center md:justify-start justify-center ">
               <EmpressiaSygnet className="empressia__sygnet mb-10 sm:mb-0" />
             </div>
-            <img src={stars} className="stars" />
+            <img
+              src={stars}
+              className="stars"
+              alt="kolorowe logo agencji empressia"
+            />
             <span className="rating__data sm:ml-auto sm:mt-0 mt-1  justify-center sm:justify-start">
               5.0 (163 opinie) na
             </span>
             <img
               src={znanyLekarzLogo}
               className="znanyLekarz__logo mt-1 sm:mt-0"
+              alt="logo portalu znanylekarz.pl"
             />
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-10  justify-center sm:justify-start">
-              <a href="#" className="">
+              <a href="/#" className="">
                 <FacebookIcon className="social__icon social__icon--facebook" />
               </a>
-              <a href="#" className="">
+              <a href="/#" className="">
                 <InstagramIcon className="social__icon" />
               </a>
             </span>

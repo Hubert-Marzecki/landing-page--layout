@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ReactComponent as EmpressiaLogo } from "../assets/header/logo-empressiaColor.svg";
 import heroImg from "../assets/section--intro/illustration-hero.png";
 
 export default function Hero() {
@@ -33,8 +32,7 @@ export default function Hero() {
                       ? " inside-oval inside__oval-grow"
                       : "inside-oval"
                   }
-                >
-                </span>
+                ></span>
               </span>
             </div>
           </button>
@@ -42,7 +40,11 @@ export default function Hero() {
         </div>
       </div>
       <div className="sm:w-6/12 md:w-6/12 image__holder">
-        <img src={heroImg} className="hero__image" />
+        <img
+          src={heroImg}
+          className="hero__image"
+          alt="kobieta siedząca na kanapie trzuma tableta, na którym widać telekonferencje z lekarzem "
+        />
       </div>
     </section>
   );

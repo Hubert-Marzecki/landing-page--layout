@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import closeIcon from "../assets/close.png";
 import { Link, BrowserRouter as Router } from "react-router-dom";
+
 export default function CookiesAlert() {
   function setAcceptCookies() {
     localStorage.setItem("cookies", JSON.stringify(true));
@@ -29,6 +30,7 @@ export default function CookiesAlert() {
       </p>
       <span>
         <img
+          alt="close alert icon"
           src={closeIcon}
           onClick={() => setAcceptCookies()}
           className="close__tab ml-4 mr-4 sm:ml-4"

@@ -7,6 +7,10 @@
   @media (max-width: $mobile-breakpoing) {
     margin-top: 20px;
   }
+
+  @media (min-width: $large-destkop) {
+      margin-top: 400px;
+  }
 }
 
 .profit__header {

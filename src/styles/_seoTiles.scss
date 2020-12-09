@@ -15,11 +15,11 @@
   @include tile-text;
 }
 
-.seo__tile{
-    width: 90%;
-    margin-top: 80px;
+.seo__tile {
+  width: 90%;
+  margin-top: 80px;
 
-    @media (max-width: $mobile-breakpoing) {
-       margin:  0 auto;
-      }
+  @media (max-width: $mobile-breakpoing) {
+    margin: 0 auto;
+  }
 }

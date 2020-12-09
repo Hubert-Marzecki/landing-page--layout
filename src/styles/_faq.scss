@@ -2,18 +2,21 @@
 
 .faq__section {
   @include container-body;
-  margin-top: 270px;
+  margin-top: 280px;
   @media (max-width: $mobile-breakpoing) {
     padding-top: 50px;
-   margin-top:0
-
+    margin-top: 0;
   }
   padding-top: 100px;
   border-top: 1px solid rgb(236, 236, 236);
+
+  @media (min-width: $large-destkop) {
+    margin-top: 400px;
+}
 }
 
 .faq__header {
-  font-family: "Comfortaa", cursive;
+  font-family: $font-headers--secondary;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
@@ -94,8 +97,9 @@
 }
 .arrow {
   position: absolute;
-  left: 70%;
-  z-index: 100;
+  left: 125%;
+  top: 25%;
+  z-index: 10;
   width: 10px;
   height: auto;
   transform: rotate(270deg);
@@ -104,8 +108,9 @@
 
 .arrow--open {
   position: absolute;
-  left: 70%;
-  z-index: 100;
+  left: 125%;
+  top: 25%;
+  z-index: 10;
   width: 10px;
   height: auto;
   transform: rotate(90deg);
