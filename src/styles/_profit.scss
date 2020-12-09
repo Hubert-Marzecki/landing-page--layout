@@ -1,70 +1,71 @@
 @import "./varibles";
 
 .profit__section {
-    @include container-body;
-    margin-top: 250px;
-    @media(max-width: $mobile-breakpoing) {
-        margin-top: 20px;
-         }
-   }
+  @include container-body;
+  margin-top: 270px;
+
+  @media (max-width: $mobile-breakpoing) {
+    margin-top: 20px;
+  }
+}
 
 .profit__header {
-    @include header-big;
-}   
-
-.text__container{
-    width: 80%;
-    text-align: center;
-    @media(max-width: $mobile-breakpoing) {
-        width: 100%;
-        text-align: left;
-         }
-}
-.profit__desc{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-    @include text-normal;
-
-    @media(max-width: $mobile-breakpoing) {
-        width: 100%;
-         }
+  @include header-big;
 }
 
-.profit-background-image{
-    position: absolute;
-    width: 120%;
-    top: 58%;
-    left: -15%;
-    transform: translateY(-50%);
-    z-index: -10;
-    
-    @media(max-width: $mobile-breakpoing) {
-        display: none;;
-         }
+.text__container {
+  width: 80%;
+  text-align: center;
+  @media (max-width: $mobile-breakpoing) {
+    width: 100%;
+    text-align: left;
   }
-  .profit-social-icon-holder{
-    // background: url("../assets/section--profit/illustration-segment.png") center center no-repeat;
-    z-index: 2;
+}
+.profit__desc {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  @include text-normal;
 
-    .social-icon{
-        z-index: 2;
-        position: relative;
-        height: 100px;
-        z-index: 100;
-    }
+  @media (max-width: $mobile-breakpoing) {
+    width: 100%;
   }
-  
-  .profit__section::before {
+}
+
+.profit-background-image {
+  position: absolute;
+  width: 120%;
+  top: 58%;
+  left: -15%;
+  transform: translateY(-50%);
+  z-index: -10;
+
+  @media (max-width: $mobile-breakpoing) {
+    display: none;
+  }
+}
+.profit-social-icon-holder {
+  // background: url("../assets/section--profit/illustration-segment.png") center center no-repeat;
+  z-index: 2;
+
+  .social-icon {
     z-index: 2;
-    position: absolute;
-    top: 35%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url("../assets/section--profit/illustration-segment.png") no-repeat center center;
-    opacity: 1;
-    content: "";
-    height: 50%;
+    position: relative;
+    height: 100px;
+    z-index: 100;
   }
-  
+}
+
+.profit__section::before {
+  z-index: 2;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../assets/section--profit/illustration-segment.png")
+    no-repeat center center;
+  opacity: 1;
+  content: "";
+  height: 50%;
+}

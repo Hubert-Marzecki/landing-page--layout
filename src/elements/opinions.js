@@ -1,3 +1,4 @@
+import userImage from '../assets/section--opinions/card-opinion-opinions/hover/opinions/hover/avatar.jpg'
 
 const options = [
     {
@@ -10,7 +11,7 @@ const options = [
         date: "10 lipca 2020",
         text: "Pan Michał to świetny lekarz, nie spieszył się, obejrzał znamię, wyjaśnił wszystko, lek ze mną omówił więc nie wypisywał w ciemno jak to robi reszta lekarzy. Polecam lekarza.",
         userName: "Maria",
-        userImg: ""
+        userImg: userImage
     },
     {
         date: "10 lipca 2020",
@@ -34,7 +35,7 @@ const options = [
         date: "10 lipca 2020",
         text: "Pan Michał to świetny lekarz, nie spieszył się, obejrzał znamię, wyjaśnił wszystko, lek ze mną omówił więc nie wypisywał w ciemno jak to robi reszta lekarzy. Polecam lekarza.",
         userName: "Maria",
-        userImg: ""
+        userImg: userImage
     },
     {
         date: "10 lipca 2020",
@@ -58,7 +59,7 @@ const options = [
         date: "10 lipca 2020",
         text: "Pan Michał to świetny lekarz, nie spieszył się, obejrzał znamię, wyjaśnił wszystko, lek ze mną omówił więc nie wypisywał w ciemno jak to robi reszta lekarzy. Polecam lekarza.",
         userName: "Maria",
-        userImg: ""
+        userImg: userImage
     },
     {
         date: "10 lipca 2020",
@@ -82,7 +83,7 @@ const options = [
         date: "10 lipca 2020",
         text: "Pan Michał to świetny lekarz, nie spieszył się, obejrzał znamię, wyjaśnił wszystko, lek ze mną omówił więc nie wypisywał w ciemno jak to robi reszta lekarzy. Polecam lekarza.",
         userName: "Maria",
-        userImg: ""
+        userImg: userImage
     },
     {
         date: "10 lipca 2020",
@@ -106,7 +107,7 @@ const options = [
         date: "10 lipca 2020",
         text: "Pan Michał to świetny lekarz, nie spieszył się, obejrzał znamię, wyjaśnił wszystko, lek ze mną omówił więc nie wypisywał w ciemno jak to robi reszta lekarzy. Polecam lekarza.",
         userName: "Maria",
-        userImg: ""
+        userImg: userImage
     },
 
 ]

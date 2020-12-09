@@ -15,9 +15,7 @@ export default function OpinionTile() {
             class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
           />
           <span class="flex-grow flex flex-col ">
-            <span class="title-font font-medium ">
-              Holden Caulfield
-            </span>
+            <span class="title-font font-medium ">Holden Caulfield</span>
             <span class="text-gray-500 text-sm">UI DEVELOPER</span>
           </span>
         </a>

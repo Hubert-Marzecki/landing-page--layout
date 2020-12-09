@@ -13,19 +13,20 @@ export default function ProfitSection() {
         <div class="mx-auto flex pt-20  items-center justify-center flex-col ">
           <div className="flex profit-social-icon-holder">
             <div className="profit-social-icon">
-              <img class="social-icon"  src={skypeIcon} />
+              <img class="social-icon" src={skypeIcon} />
             </div>
             <div className="profit-social-icon">
-            <img class="social-icon" src={whatsAppIcon} />
+              <img class="social-icon" src={whatsAppIcon} />
             </div>
           </div>
 
           <div class="text__container ">
             <h2 class="profit__header ">
-            Skorzystaj z najszybciej rozwijającej się gałęzi medycyny.
+              Skorzystaj z najszybciej rozwijającej się gałęzi medycyny.
             </h2>
             <p class=" profit__desc ">
-            Teleporada lekarska na naszym serwisie oznacza potwierdzoną skuteczność terapeutyczną, oszczędność czasu i pieniędzy.
+              Teleporada lekarska na naszym serwisie oznacza potwierdzoną
+              skuteczność terapeutyczną, oszczędność czasu i pieniędzy.
             </p>
           </div>
         </div>

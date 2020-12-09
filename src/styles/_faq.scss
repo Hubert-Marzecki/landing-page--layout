@@ -1,142 +1,141 @@
-@import './varibles';
+@import "./varibles";
 
-.faq__section{
-   @include container-body;
-   padding-top: 300px;
-   @media(max-width:  $mobile-breakpoing) {
+.faq__section {
+  @include container-body;
+  margin-top: 270px;
+  @media (max-width: $mobile-breakpoing) {
     padding-top: 50px;
+   margin-top:0
 
+  }
+  padding-top: 100px;
+  border-top: 1px solid rgb(236, 236, 236);
 }
+
+.faq__header {
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  width: 70%;
+  @media (max-width: $mobile-breakpoing) {
+    width: 100%;
+  }
+}
+
+.faq__button {
+  @include button;
+  color: $main-elements-color;
+  border: 2px solid $main-elements-color;
+  padding: 0 20px;
+  line-height: 18px;
+  margin-top: 30px;
+  @include transition-button;
+
+  &:hover {
+    background-color: $main-elements-color;
+    color: $font-above-color;
+  }
+}
+
+.faq__image {
+  position: relative;
+  left: -120px;
+
+  &::before {
+    z-index: 10;
+    position: absolute;
+    background: url("../assets/section--profit/illustration-segment.png")
+      no-repeat center center;
+    opacity: 1;
+    content: "XXX";
+    height: 50%;
   }
 
-.faq__header{
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
-    width: 70%;
-    @media(max-width:  $mobile-breakpoing) {
-        width: 100%;
-    }
-   
+  @media (max-width: $mobile-breakpoing) {
+    left: 0px;
+  }
+  @media (min-width: $mobile-breakpoing) and (max-width: $small-desktop) {
+    left: -80px;
+  }
 }
 
-.faq__button{
-    @include button;
-    color: $main-elements-color;
-    border: 2px solid $main-elements-color;
-    padding: 0 20px ;
-    line-height: 18px;
-    margin-top: 30px;
-    @include  transition-button ; 
-
-    &:hover{
-        background-color:  $main-elements-color;
-        color: $font-above-color;
-    }
-}
-
-.faq__image{
-    position: relative;
-    left: -120px;
-
-    &::before {
-        z-index: 10;
-        position: absolute;
-        background: url("../assets/section--profit/illustration-segment.png") no-repeat center center;
-        opacity: 1;
-        content: "XXX";
-        height: 50%;
-      }
-
-    @media(max-width:  $mobile-breakpoing) {
-        left: 0px;
-    }
-    @media(min-width:  $mobile-breakpoing) and (max-width: $small-desktop) {
-        left: -80px;
-    }
-}
-
-.tab{
-    width: 110%;
-    @media(max-width:  $mobile-breakpoing) {
+.tab {
+  width: 110%;
+  @media (max-width: $mobile-breakpoing) {
     width: 100%;
+  }
+}
+.tab__title {
+  background-color: $main-elements-color;
+  padding: 1.3em;
+  @include tab-title-main;
+  border-radius: 4px;
+  margin-top: 4px;
+  cursor: pointer;
+
+  .tab__title__text {
+    width: 80%;
+
+    @media (max-width: $mobile-breakpoing) {
+      width: 100%;
     }
+  }
+
+  .tab__arrow__holder {
+    position: relative;
+  }
+
+  @include transition-button;
+  &:hover {
+    background-color: $main-color-darker;
+  }
+  font-family: "Comfortaa", cursive;
 }
-.tab__title{
-    background-color: $main-elements-color;
-    padding: 1.3em;
-    @include tab-title-main ;
-    border-radius: 4px;
-    margin-top: 4px;
-    cursor: pointer;
-
-    .tab__title__text{
-        width: 80%;
-
-        @media(max-width:  $mobile-breakpoing) {
-            width: 100%;
-            }
-    }
-
-    .tab__arrow__holder{
-        position: relative;
-    }
-        
-    
-
-    @include  transition-button ; 
-    &:hover{
-        background-color: $main-color-darker;
-    }
-    font-family: 'Comfortaa', cursive;
-}
-.arrow{
-    position: absolute;
-    left: 70%;
-    z-index: 100;
-    width: 10px;
-    height: auto;
-    transform: rotate(270deg);
-    @include  transition-button ; 
+.arrow {
+  position: absolute;
+  left: 70%;
+  z-index: 100;
+  width: 10px;
+  height: auto;
+  transform: rotate(270deg);
+  @include transition-button;
 }
 
-.arrow--open{
-    position: absolute;
-    left: 70%;
-    z-index: 100;
-    width: 10px;
-    height: auto;
-    transform: rotate(90deg);
-    @include  transition-button ; 
+.arrow--open {
+  position: absolute;
+  left: 70%;
+  z-index: 100;
+  width: 10px;
+  height: auto;
+  transform: rotate(90deg);
+  @include transition-button;
 }
 
-
-.tab__content{
-    padding: 1em;
-    @include text-normal;
+.tab__content {
+  padding: 1em;
+  @include text-normal;
 }
 
-.tab__nested{
-    .nested__titile{
-    @include tab-title-main ;
+.tab__nested {
+  .nested__titile {
+    @include tab-title-main;
     color: $secondary-font-color;
-    }
-
+  }
 }
-.nested__tab__title{
-    @include tab-title-nested;
-    font-weight: 600;
-    padding-left: 1.3em;
-    margin-bottom: 1em;
-    cursor: pointer;
-    font-family: 'Comfortaa', cursive;
+.nested__tab__title {
+  @include tab-title-nested;
+  font-weight: 600;
+  padding-left: 1.3em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-family: "Comfortaa", cursive;
 }
-.nested__tab__content{
-    padding-left: 1.3em;
-    padding-bottom: 3rem;
-    @include text-normal;
+.nested__tab__content {
+  padding-left: 1.3em;
+  padding-bottom: 3rem;
+  @include text-normal;
 }
 .ReactCollapse--collapse {
-    transition: height 800ms;
-  }
+  transition: height 800ms;
+}

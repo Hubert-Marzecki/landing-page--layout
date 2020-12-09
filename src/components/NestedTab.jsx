@@ -1,20 +1,19 @@
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import arrow from '../assets/section--faq/arrow.png';
+import arrow from "../assets/section--faq/arrow.png";
 
-export default function NestedTab({tabTitle, tabText}) {
+export default function NestedTab({ tabTitle, tabText }) {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [isOpen, setIsOpen] = useState(false)
+  return (
+    <div>
+      <p className="nested__tab__title" onClick={() => setIsOpen(!isOpen)}>
+        {tabTitle}
+      </p>
 
-    return (
-        <div>
-        <p className="nested__tab__title" onClick={() => setIsOpen(!isOpen)}>
-                 {tabTitle}
-                </p>
-              
-                <Collapse isOpened={isOpen} >
-                  <p className="nested__tab__content">{tabText}</p>
-                </Collapse>
-        </div>
-    )
+      <Collapse isOpened={isOpen}>
+        <p className="nested__tab__content">{tabText}</p>
+      </Collapse>
+    </div>
+  );
 }

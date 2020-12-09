@@ -1,61 +1,60 @@
-@import './varibles';
+@import "./varibles";
 
-.header__section{
+.header__section {
+  transition: all 0.3s ease;
+  z-index: 100;
+  @include container-body;
+  font-size: 14px;
+  margin-top: 30px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 800;
+
+  .logo {
+    height: 22px;
+    margin-right: 2em;
+  }
+  .nav {
+    letter-spacing: 0;
+    color: $primary-font-color;
     transition: all 0.3s ease;
-    z-index: 100;
-    @include container-body;
-    font-size: 14px;
-    margin-top: 30px;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 800;
-
-    .logo{
-        height: 22px;
-        margin-right: 1em;
-    }
-    .nav{
-        letter-spacing: 0;
-        color: $primary-font-color;
+    &__item {
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.5;
         transition: all 0.3s ease;
-        &__item{
-            transition: all 0.3s ease;
-            &:hover{
-                opacity: 0.5;
-                 transition: all 0.3s ease;
+      }
+    }
+   
+  }
+  .nav__link {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 0px;
+    margin-top: 12px;
+    margin-right: 20px;
+    cursor: pointer;
+   
+  }
+  .nav--isHidden {
+    display: none;
+    transition: all 0.5s ease;
+  }
+  .header__cta__button {
+    background-color: $main-elements-color;
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 16px;
+    border-radius: 4px;
 
-            }
-        }
-      
+    @include transition-button;
+
+    &:hover {
+      @include get-darker;
     }
-      .nav__link{
-        display: inline-block;
-        list-style:  none;
-        padding: 0px 0px;
-        margin-top: 12px;
-        margin-right: 20px;
-        cursor: pointer;
-        // inline-block no-underline  hover:text-underline py-2 lx:px-4 md:px-2  cursor-pointer
-    }
-    .nav--isHidden{
-        display: none;
-        transition: all 0.5s ease;
-    }
-    .header__cta__button {
-        background-color: $main-elements-color;
-        color: white;
-        height: 40px;
-        font-weight: bold; 
-        line-height: 40px;
-        padding:  0 16px;
-        border-radius: 4px;
-      
-        @include transition-button;
-        
-        &:hover{
-           @include get-darker;
-        }
-    }
-    .nav__item--cta{
-        margin-left: 90px;
-    }
+  }
+  .nav__item--cta {
+    margin-left: 80px;
+  }
 }

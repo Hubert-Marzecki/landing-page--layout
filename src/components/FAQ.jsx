@@ -1,8 +1,7 @@
 import FAQimage from "../assets/section--faq/illustration-faq.png";
-import { Collapse } from "react-collapse";
 import { useEffect, useState } from "react";
-import Tab from './Tab';
-import NestedTab from './NestedTab';
+import Tab from "./Tab";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 export default function FQA() {
   const tabsText = [
@@ -21,21 +20,14 @@ export default function FQA() {
     },
   ];
 
-  const nestedTabs =[
+  const nestedTabs = [
     {
       tabTitle: "Jakie są korzyści teleporady lekarskiej na naszym serwisie?",
       colapseText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
-    }
-  ]
+    },
+  ];
   const [tabs, setTabs] = useState(tabsText);
-
-  // function isOpen(index) {
-  //   let items = [...tabs];
-  //   let item = items[index];
-  //   items[index].isOpen = !item.isOpen;
-  //   setTabs(items);
-  // }
 
   useEffect(() => {
     console.log(tabs);
@@ -47,20 +39,34 @@ export default function FQA() {
         <div className="sm:w-6/12">
           <div className="info__holder">
             <h3 className="faq__header"> Najczęściej zadawane pytania </h3>
-            <button className="faq__button">Sprawdź całe FAQ</button>
+            <Router>
+            <Link to="#">
+              <button className="faq__button">Sprawdź całe FAQ</button>
+            </Link>
+            </Router>
+            
           </div>
           <div className="img__holder">
             <img className="faq__image" src={FAQimage} />
           </div>
         </div>
         <div className="sm:w-5/12 lg:ml-8">
-         
-             <Tab tabTitle={tabsText[0].tabTitle} tabText={tabsText[0].colapseText} nestedTabs={null} />
-             <Tab tabTitle={tabsText[1].tabTitle} tabText={tabsText[1].colapseText}  nestedTabs={nestedTabs} />
-             <Tab tabTitle={tabsText[2].tabTitle} tabText={tabsText[2].colapseText}  nestedTabs={null} />
-           
+          <Tab
+            tabTitle={tabsText[0].tabTitle}
+            tabText={tabsText[0].colapseText}
+            nestedTabs={null}
+          />
+          <Tab
+            tabTitle={tabsText[1].tabTitle}
+            tabText={tabsText[1].colapseText}
+            nestedTabs={nestedTabs}
+          />
+          <Tab
+            tabTitle={tabsText[2].tabTitle}
+            tabText={tabsText[2].colapseText}
+            nestedTabs={null}
+          />
         </div>
-      
       </div>
     </>
   );

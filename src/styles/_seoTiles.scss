@@ -1,17 +1,25 @@
-@import './varibles';
+@import "./varibles";
 
-.seo__section{
-    @include container-body;
-    margin-bottom: 100px;
-    font-family: 'Comfortaa', cursive;
-
+.seo__section {
+  @include container-body;
+  margin-bottom: 100px;
+  font-family: "Comfortaa", cursive;
 }
 
-.tile__header{
-    @include tile-header;
-    height: fit-content;
+.tile__header {
+  @include tile-header;
+  height: fit-content;
 }
 
-.tile__text{
-    @include tile-text;
+.tile__text {
+  @include tile-text;
+}
+
+.seo__tile{
+    width: 90%;
+    margin-top: 80px;
+
+    @media (max-width: $mobile-breakpoing) {
+       margin:  0 auto;
+      }
 }
