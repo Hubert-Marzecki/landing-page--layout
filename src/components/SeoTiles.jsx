@@ -1,11 +1,11 @@
-import seoTrigger from "../elements/seoTriggers";
+import seoTiles from "../elements/seoTiles";
 import uuid from "react-uuid";
 
 export default function SeoFriend() {
   return (
     <>
       <div className="seo__section grid-cols-1 md:grid-cols-3 grid gap-4 ">
-        {seoTrigger.map((item) => {
+        {seoTiles.map((item) => {
           return (
             <div className="w-full text-center seo__tile" key={uuid()}>
               <img
